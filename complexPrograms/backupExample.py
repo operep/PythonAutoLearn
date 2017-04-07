@@ -29,7 +29,7 @@ def backup(folder):
             elif filename.endswith('.py'):
                 backupArchive.write(os.path.join(foldername, filename))
     backupArchive.close()
-    shutil.move(('/Users/oleksandrp/PythonAuto/%s' % str(archiveFilename)), './TestBackup')
+    shutil.move(('./%s' % str(archiveFilename)), './TestBackup')
     print('Completed.')
 
 
